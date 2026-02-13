@@ -2,11 +2,17 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
+
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Bienvenido al Calculador de Notas");
+    }
 
+    public static void afegirnNota(int assignatura, int notaNova, Alumno a){
+            a.setNotas(assignatura, notaNova);
+    
         //INTERFAZ GRAFICA
 
          // LOOK and FEEL
@@ -92,4 +98,7 @@ public class Main {
         f.setLocationRelativeTo(null);// Centra la ventana en la pantalla
         f.setVisible(true);// Hace visible la ventana
     }
-}
+    }
+
+
+
