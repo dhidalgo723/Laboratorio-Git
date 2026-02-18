@@ -3,13 +3,13 @@ public class CalcularMitjana {
 
     protected static String[] alumnos = new String[5];
     protected static int[] notas = new int[5];
-    protected static int mitjana;
+    protected static int mitjana= 0;
 
     public CalcularMitjana(int[] notas) {
         this.notas = notas;
     }
 
-    public static int mitjana(int mitjana) {
+    public static int mitjana() {
         int i = 0;
         for (i = 0; i < notas.length; i++) {
             mitjana += notas[i];
